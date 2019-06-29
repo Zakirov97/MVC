@@ -1,0 +1,15 @@
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.dll.config
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.pdb
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\EntityFramework.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.pdb
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.dll.config
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\EntityFramework.xml
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\bin\Debug\ru\EntityFramework.resources.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csproj.CoreCompileInputs.cache
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csproj.CopyComplete
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.dll
+c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.pdb

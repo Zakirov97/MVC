@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HotelAtrModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="RoomOptions">
+    <Key>
+      <PropertyRef Name="RoomOptionsId" />
+    </Key>
+    <Property Name="RoomOptionsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Room_RoomId" Type="Int32" />
+    <NavigationProperty Name="Rooms" Relationship="Self.FK_dbo_RoomOptions_dbo_Rooms_Room_RoomId" FromRole="RoomOptions" ToRole="Rooms" />
+  </EntityType>
+  <EntityType Name="Rooms">
+    <Key>
+      <PropertyRef Name="RoomId" />
+    </Key>
+    <Property Name="RoomId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PathBasePicture" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RoomTypeId" Type="Int32" Nullable="false" />
+    <Property Name="Floor" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="RoomOptions" Relationship="Self.FK_dbo_RoomOptions_dbo_Rooms_Room_RoomId" FromRole="Rooms" ToRole="RoomOptions" />
+  </EntityType>
+  <Association Name="FK_dbo_RoomOptions_dbo_Rooms_Room_RoomId">
+    <End Role="Rooms" Type="Self.Rooms" Multiplicity="0..1" />
+    <End Role="RoomOptions" Type="Self.RoomOptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rooms">
+        <PropertyRef Name="RoomId" />
+      </Principal>
+      <Dependent Role="RoomOptions">
+        <PropertyRef Name="Room_RoomId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="HotelAtrEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="RoomOptions" EntityType="Self.RoomOptions" />
+    <EntitySet Name="Rooms" EntityType="Self.Rooms" />
+    <AssociationSet Name="FK_dbo_RoomOptions_dbo_Rooms_Room_RoomId" Association="Self.FK_dbo_RoomOptions_dbo_Rooms_Room_RoomId">
+      <End Role="Rooms" EntitySet="Rooms" />
+      <End Role="RoomOptions" EntitySet="RoomOptions" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
