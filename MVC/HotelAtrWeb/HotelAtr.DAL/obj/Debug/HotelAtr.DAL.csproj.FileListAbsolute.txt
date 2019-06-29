@@ -1,0 +1,13 @@
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.dll.config
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.dll
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.pdb
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\EntityFramework.dll
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\EntityFramework.xml
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\bin\Debug\ru\EntityFramework.resources.dll
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csprojAssemblyReference.cache
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csproj.CoreCompileInputs.cache
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csproj.CopyComplete
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.dll
+c:\users\закировд\source\repos\HotelAtrWeb\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.pdb
