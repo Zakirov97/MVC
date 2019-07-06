@@ -13,3 +13,19 @@ c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAt
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csproj.CopyComplete
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.dll
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.pdb
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.dll.config
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.BLL.pdb
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\EntityFramework.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.pdb
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\HotelAtr.DAL.dll.config
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\EntityFramework.xml
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.csproj.CopyComplete
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.BLL\obj\Debug\HotelAtr.BLL.pdb

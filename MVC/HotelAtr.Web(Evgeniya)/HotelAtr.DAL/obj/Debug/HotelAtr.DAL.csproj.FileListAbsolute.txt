@@ -11,3 +11,16 @@ c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.DAL\obj\Debug\HotelAt
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csproj.CopyComplete
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.dll
 c:\Users\ГерценЕ\source\repos\HotelAtr.Web\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.pdb
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.dll.config
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\HotelAtr.DAL.pdb
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\EntityFramework.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\EntityFramework.xml
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csprojAssemblyReference.cache
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csproj.CoreCompileInputs.cache
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.csproj.CopyComplete
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.dll
+C:\Users\diasz\Desktop\MVC GIT HUB\MVC\MVC\HotelAtr.Web(Evgeniya)\HotelAtr.DAL\obj\Debug\HotelAtr.DAL.pdb
