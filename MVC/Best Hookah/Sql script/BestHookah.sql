@@ -60,14 +60,136 @@ VALUES
 	('LIQUOR',28.30,'','../Content/uploads/2018/11/mt-1616-hookah-_bar-img-8.jpg','DRINKS');
 GO
 CREATE TABLE MenuSections(
-ID INT NOT NULL IDENTITY PRIMARY KEY,
+Id INT NOT NULL IDENTITY PRIMARY KEY,
 [Name] VARCHAR(255) NOT NULL
 )
 GO
 INSERT INTO MenuSections(Name)
 SELECT DISTINCT TableName FROM HookahBarDrinks
 GO
+CREATE TABLE EventsOnSite(
+Id INT NOT NULL IDENTITY PRIMARY KEY,
+[EventName] VARCHAR(255) NOT NULL,
+[ShortDescription] VARCHAR(MAX) NOT NULL,
+[ArticleCreationDate] DATETIME NOT NULL,
+[AuthorOfArticle] VARCHAR(255) NOT NULL,
+[Content] VARCHAR(MAX) NOT NULL,
+[ArticleImagePath] VARCHAR(MAX) NOT NULL
+)
+GO
+INSERT INTO EventsOnSite
+VALUES
+	('THE MOST COMMON MISTAKES WHEN MANAGING PERSONAL FINANCES','The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.','12.11.2018','Demo User','The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable. Below are the common mistakes related to money affairs along with financial planning advice to help manage your own finances properly.
+
+
+
+The budget is the most basic thing in financial planning. It is therefore especially important to be careful when compiling the budget. To start you have to draw up your own budget for the next month and only after it you may make a yearly budget.
+
+
+
+As the basis takes your monthly income, subtract from it such regular expenses as the cost of housing, transportation, and then select 20-30% on savings or mortgage loan payment.
+
+The rest can be spent on living: restaurants, entertainment, etc. If you are afraid of spending too much, limit yourself in weekly expenses by having a certain amount of ready cash.
+
+
+
+"When people borrow, they think that they should return it as soon as possible," said Sofia Bera, a certified financial planner and founder of Gen Y Planning company. And at its repayment spend all that earn. But it''s not quite rationally ".
+
+
+
+If you don''t have money on a rainy day, in case of an emergency (e.g. emergency of car repairs) you have to pay by credit card or get into new debts. Keep on account of at least $1000 in case of unexpected expenses. And gradually increase the "airbag" to an amount equal to your income for up to three-six months.
+
+
+
+"Usually when people plan to invest, they only think about profit and they don''t think that loss''s possible", says Harold Evensky, the President of the financial management company Evensky & Katz. He said that sometimes people do not do basic mathematical calculations.
+
+For example, forgetting that if in one year they lost 50%, and the following year they received 50% of the profits, they did not return to the starting point, and lost 25% savings. Therefore, think about the consequences. Get ready to any options. And of course, it would be wiser to invest in several different investment objects.','../Content/uploads/2018/11/mt-1616-blog-img-1.jpg'),
+	('METHODS OF THE RECRUITMENT','Search of staff is not an easy task. According to the departmental heads'' of personnel management words, in order to find a personnel who will correspond to the relevant customer needs and requirements, it is necessary to carry out a great job.','12.11.2018','Demo User','Search of staff is not an easy task. According to the departmental heads'' of personnel management words, in order to find a personnel who will correspond to the relevant customer needs and requirements, it is necessary to carry out a great job.
+
+For search and selection of necessary staff, a variety of means from the arsenal of psychological science is used : biographical questionnaires, standardized and non-standartized interviews, jobs, modelling work and situational exercises, tests on achievement, personality, intelligence and abilities, polygraphic examinations and much more.
+
+
+
+It cannot be said that the use of psychological methods is absolutely devoid of any complications.Though many years of experience in the use of funds in a competitive environment influence on details such as drafting employment contracts, ensuring full motivational package.
+
+
+
+There are some psychological techniques borrowed from abroad and their adaptation in the vast majority of cases has been reduced to minimum. As a result, practices that still somehow can be used in search and selection of personnel do not meet basic requirements of psychrometric.
+
+The second major obstacle to the use of modern psychological diagnostics in practice of professional selection is the low level of psychological training of managers of contracting authorities and, alas the candidates who wish to obtain working space without making much effort. So professional psychologists are not enough to manage a professional psychological selection of personnel and solving other problems at the company related to the estimation of the personnel. Also well-established psychological assessment tools that meet all necessary requirements are required.','../Content/uploads/2018/11/mt-1616-blog-img-2.jpg'),
+	('OVERALLS WITH LOGO AS A METHOD OF ADVERTISING','Overalls bearing the company''s logo are related to economy and practicality. A preference of corporate style involves a significant increase of costs for development of design solutions, customized tailoring, selection of necessary materials and so on.','12.11.2018','Demo User','Overalls bearing the company''s logo are related to economy and practicality. A preference of corporate style involves a significant increase of costs for development of design solutions, customized tailoring, selection of necessary materials and so on.
+
+
+
+Overalls long ago ceased to perform exclusively utilitarian function. Often the image part plays a very important role.
+
+
+
+The choice does not cause interest for many businessmen and that is why it is ignored. A better solution for such businessmen is serving logotype on clothing, like sweatshirt or order of the t-shirts, hoodies. Such an approach also ensures recognition of firm, understanding of potential customers.
+
+In some sorts of btl-actions promotional costumes are applied - spectacular and colourful advertising anchors that effectively attract attention. There is also a sense in applying logo  on the company clothing since under these conditions, it will be remembered at an intuitive level will complement the pleasant emotions of the event.
+
+Workwear with logo of outline type is rather popular. There are some methods of implementing this kind of logo that require the possibility of large images. Transfer print gives a possibility of designing small accessories-handbags, caps, bandanas, etc.
+
+
+
+It is important to understand that overalls and the company''s logo are images, the face of the company, it is a tool to be remembered by the clients.','../Content/uploads/2018/11/mt-1616-blog-img-4.jpg'),
+	('THE MAIN OBJECTIVES OF THE MARKETER','The modern market is absolutely unpredictable. And yet it lives according to strict laws. The marketers need to be known to achieve maximum results in their business - that is the main task of the marketer.','12.11.2018','Demo User','The modern market is absolutely unpredictable. And yet it lives according to strict laws. The marketers need to be known to achieve maximum results in their business - that is the main task of the marketer.
+
+
+
+Cold calculation or intuition?
+
+"Maximum results" is a wide concept. What do professional marketers deal with?
+
+At first glance, their work looks pretty boring. Thay learn what changes occur in the global market, how much the advertising budget of a competiting company grew and how it will affect the business development.
+
+
+
+On the other hand, each task that they solve requires creativity. How to create branded products, how to conduct an advertising company, how to improve the product, through whom to organize and establish an effective dealer system, where to pave the way for an quick promotion...
+
+
+
+The work in a marketing sphere is a combination of the system and directly the nature of man. It combines technology and art. Developing strategies, and building a brand are technologies of the content process. And art is in working with people. It requires talent, imagination and soul. After all, the attraction of buyers is communication, game, show.
+
+The marketing is considered to be one of the most promising fields. This confirms the opening of new universities and specialized departments and faculties, where teachers and administration will "make" the geniuses in the field market management.','../Content/uploads/2018/11/mt-1616-blog-img-6.jpg'),
+	('RECESSION IS A GOOD OPPORTUNITY TO DEAL A DEATHBLOW TO THE COMPETITORS','Media prices are falling, so advertising becomes more profitable. The combination of low prices on media and weak competition gives companies the opportunity to cheaply grab market share.','12.11.2018','Demo User','Media prices are falling, so advertising becomes more profitable. The combination of low prices on media and weak competition gives companies the opportunity to cheaply grab market share.
+
+Then came truly frightening times for marketing managers. How to respond? What is the optimal strategy? There are several rules of survival in the times of crisis.
+
+
+
+Do not panic. Most marketers assume that during the crisis consumers have sharply cut their spendings. In fact, consumer spendings rarely really fall, they simply grow more slowly, not at the pace of inflation.
+
+
+
+Cut the correct costs. To the right are the administrative costs and even reduction of volumes of manufacture. It is impossible to start saving on quality of a product or its promotion.
+
+
+
+Reduce of advertising costs inevitably will reduce your income. This is the easiest and fastest way to cut costs, but the reckoning is inevitable. Studies have shown that firms that reduce advertising costs during a recession typically experience 20-30% decline in sales and earnings over the next two years.
+
+
+
+Reduce of advertising costs inflicts long-term harm. By results of researches, advertising has a lasting effect on sales: it becomes obvious in up to five years after the campaign. Cutting advertising budgets is hurting business for the long term. PIMS analysis shows that companies that shorten the ads need much more time to exit the crisis than all the rest (when the economic situation begins to improve).','../Content/uploads/2018/11/mt-1616-blog-img-8.jpg');
+GO
+CREATE TABLE Branches(
+Id INT NOT NULL PRIMARY KEY IDENTITY,
+[BranchName] VARCHAR(255) NOT NULL,
+[Description] VARCHAR(MAX) NOT NULL,
+[Address] NVARCHAR(MAX) NOT NULL,
+[Phone] VARCHAR(255) NOT NULL,
+[HoursOfOperations] VARCHAR(255) NOT NULL
+)
+GO 
+INSERT INTO Branches
+VALUES
+	('HOOKAH BAR & LOUNGE','Our top Hookah Bar & Lounge is the premier lounge in Hollywood where you can chill in a relaxed atmosphere!','6353 Yucca Street, Los Angeles,
+CA 90028','(123) 345-6789','2 PM to 3 AM Daily')
+GO
 SELECT * FROM UsersForNotifications
 SELECT * FROM Reserve
 SELECT * FROM HookahBarDrinks
 SELECT * FROM MenuSections
+SELECT * FROM EventsOnSite
+SELECT * FROM Branches
