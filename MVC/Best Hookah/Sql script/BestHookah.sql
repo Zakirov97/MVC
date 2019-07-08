@@ -187,9 +187,50 @@ VALUES
 	('HOOKAH BAR & LOUNGE','Our top Hookah Bar & Lounge is the premier lounge in Hollywood where you can chill in a relaxed atmosphere!','6353 Yucca Street, Los Angeles,
 CA 90028','(123) 345-6789','2 PM to 3 AM Daily')
 GO
+CREATE TABLE Gallery(
+Id INT NOT NULL PRIMARY KEY IDENTITY,
+[ImagePath] VARCHAR(MAX) NOT NULL,
+[ImageName] VARCHAR(255),
+[ImageDescription] VARCHAR(MAX),
+)
+GO
+INSERT INTO Gallery
+VALUES
+	('../Content/uploads/2018/11/mt-1616-gallery-img-9bg.jpg','mt-1616-gallery-img-9bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-1bg.jpg','mt-1616-gallery-img-1bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-2bg.jpg','mt-1616-gallery-img-2bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-3bg.jpg','mt-1616-gallery-img-3bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-4bg.jpg','mt-1616-gallery-img-4bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-12bg.jpg','mt-1616-gallery-img-12bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-5bg.jpg','mt-1616-gallery-img-5bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-6bg.jpg','mt-1616-gallery-img-6bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-7bg.jpg','mt-1616-gallery-img-7bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-11bg.jpg','mt-1616-gallery-img-11bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-8bg.jpg','mt-1616-gallery-img-8bg.jpg',''),
+	('../Content/uploads/2018/11/mt-1616-gallery-img-10bg.jpg','mt-1616-gallery-img-10bg.jpg','');
+GO
+CREATE TABLE Offers(
+Id INT NOT NULL PRIMARY KEY IDENTITY,
+[Name] VARCHAR(255) NOT NULL,
+ShortDescription VARCHAR(255) NOT NULL,
+OfferExpirationDate datetime NOT NULL
+)
+GO
+INSERT INTO Offers
+VALUES
+	('ASSORTED 12 INCH HOOKAH','Special smoking pipe and scientific design','24.07.2019'),
+	('ASSORTED 12 INCH HOOKAH','Special smoking pipe and scientific design','12.07.2019'),
+	('BAZAAR 12 INCH BLACK HOOKAH','Round base shape, refreshing hookah','12.07.2019'),
+	('BASEMENT BAZAAR 10 INCH HOOKAH','Glass product, refreshing hookah','08.07.2019'),
+	('BLACK GLASS HOOKAH','Special smoking pipe, refreshing hookah','07.07.2019'),
+	('GLASS HOOKAH','Round base shape, scientific design','07.07.2019'),
+	('TRANSPARENT HOOKAH','Round base shape, glass product.','12.07.2019');
+GO
 SELECT * FROM UsersForNotifications
 SELECT * FROM Reserve
 SELECT * FROM HookahBarDrinks
 SELECT * FROM MenuSections
 SELECT * FROM EventsOnSite
 SELECT * FROM Branches
+SELECT * FROM Gallery
+SELECT * FROM Offers
