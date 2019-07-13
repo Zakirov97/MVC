@@ -1,0 +1,59 @@
+﻿@model BestHookah.DAL.HookahBarDrinks
+
+@{
+    ViewBag.Title = "DescriptionHookahBarDrinks";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>DescriptionHookahBarDrinks</h2>
+
+<div>
+    <h4>HookahBarDrinks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TableName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TableName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "EditHookahBarDrinks", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "HookahBarDrinksList")
+</p>

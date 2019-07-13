@@ -1,0 +1,58 @@
+﻿@model IEnumerable<BestHookah.DAL.HookahBarDrinks>
+
+@{
+    ViewBag.Title = "HookahBarDrinksList";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>HookahBarDrinksList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateHookahBarDrinks")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImgPath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TableName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImgPath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TableName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditHookahBarDrinks", new { id = item.Id }) |
+            @Html.ActionLink("Details", "DescriptionHookahBarDrinks", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "DeleteHookahBarDrinks", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

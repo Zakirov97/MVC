@@ -1,0 +1,113 @@
+﻿@using BestHookah.DAL;
+@model List<HookahBarDrinks>
+@{bool x = true; }
+@{ string opened2 = "moto-widget-tabs__header_opened";
+    string opened = "moto-widget-tabs__header_opened";
+    string Display = "none";
+    List<MenuSections> menuSections = (List<MenuSections>)ViewData["MenuSections"];
+}
+@{
+    ViewBag.Title = "HookahBarDrinks";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<section id="section-content" class="content page-12 moto-section" data-widget="section" data-container="section">
+    <div class="moto-widget moto-widget-block moto-bg-color2_3 moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="block" data-spacing="lala" style="background-image:url(../Content/uploads/2018/11/mt-1616-content-bg-1.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;" data-bg-image="2018/11/mt-1616-content-bg-1.jpg" data-bg-position="center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="moto-cell col-sm-12" data-container="container">
+                    <div class="moto-widget moto-widget-row row-fixed moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-grid-type="sm" data-widget="row" data-spacing="aaaa" style="" data-bg-position="left top">
+                        <div class="container-fluid">
+                            <div class="row" data-container="container">
+                                <div class="moto-widget moto-widget-row__column moto-cell col-sm-12 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" style="" data-widget="row.column" data-container="container" data-spacing="aaaa" data-bg-position="left top">
+                                    <div class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-widget="text" data-preset="default" data-spacing="aaaa" data-animation="">
+                                        <div class="moto-widget-text-content moto-widget-text-editable"><h1 class="moto-text_system_5">HOOKAH BAR &amp; DRINKS</h1></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="moto-widget moto-widget-block moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-large moto-spacing-left-auto" data-widget="block" data-spacing="lala" style="" data-bg-position="left top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="moto-cell col-sm-12" data-container="container">
+                    <div class="moto-widget moto-widget-row row-fixed moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-grid-type="sm" data-widget="row" data-spacing="aaaa" style="" data-bg-position="left top">
+                        <div class="container-fluid">
+                            <div class="row" data-container="container">
+                                <div class="moto-widget moto-widget-row__column moto-cell col-sm-12 moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" style="" data-widget="row.column" data-container="container" data-spacing="aaaa" data-bg-position="left top">
+                                    <div data-widget-id="wid_1542018366_6r4cg1jro" class="moto-widget moto-widget-tabs  moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto   moto-preset-default moto-widget-tabs_type-horizontal moto-disabling_row-fixed set-row-gutter-0" data-widget="tabs" data-preset="default">
+                                        <div class="moto-widget-tabs__wrapper">
+                                            <div class="moto-widget-tabs__headers-wrapper moto-widget-tabs__headers-wrapper_icon-left moto-widget-tabs__headers-wrapper_headers-left" style="width: auto;">
+                                                @foreach (var item in menuSections.Select(p => p.Name))
+                                                {
+                                                    <div class="moto-widget-tabs__header moto-widget-tabs__header_desktop @opened2" data-tab="@item.Replace(" ","")">
+                                                        <div class="moto-widget-tabs__header-item moto-widget-tabs__header-title">@item</div>
+                                                    </div>
+                                                    opened2 = "";
+                                                }
+                                            </div>
+
+                                            <div class="moto-widget-tabs__items-wrapper">
+                                                @foreach (var tableName in menuSections.Select(p => p.Name))
+                                                {
+                                                    Display = "none";
+                                                    opened = "";
+                                                    if (x)
+                                                    {
+                                                        opened = "moto-widget-tabs__header_opened";
+                                                        Display = "block";
+                                                        x = false;
+                                                    }
+                                                    <div id="@tableName.Replace(" ","")" data-widget-id="@tableName.Replace(" ","")" class="moto-widget moto-widget-tabs__item" data-widget="tabs.item">
+                                                        <div class="moto-widget-tabs__header moto-widget-tabs__header_mobile @opened" data-tab="@tableName.Replace(" ","")">
+                                                            <div class="moto-widget-tabs__header-item moto-widget-tabs__header-title">@tableName</div>
+                                                        </div>
+                                                        <div class="moto-widget-tabs__content-wrapper" style="display: @Display;">
+                                                            <div class="moto-widget-tabs__content">
+                                                                @for (int i = 0; i < Model.Where(p => p.TableName == tableName).Count(); i += 4)
+                                                                {
+                                                                    <div data-widget-id="wid_1542018213_wsv0741q2" class="moto-widget moto-widget-row row-fixed moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" data-grid-type="sm" data-widget="row" data-spacing="aaaa" style="background-position:left top;">
+                                                                        <div class="container-fluid">
+                                                                            <div class="row" data-container="container">
+                                                                                @for (int c = 0; c < 4; c++)
+                                                                                {
+                                                                                    if (Model.Where(p => p.TableName == tableName).ElementAtOrDefault(i + c) != null)
+                                                                                    {
+                                                                                        <div data-widget-id="wid_1542018213_9pxw8d264" class="moto-widget moto-widget-row__column moto-cell  col-sm-3 moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto" style="background-position:left top;" data-widget="row.column" data-container="container" data-spacing="maaa">
+                                                                                            <div data-widget-id="wid_1542018213_shqo5j1ej" class="moto-widget moto-widget-text moto-preset-default  moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-auto moto-spacing-left-auto " data-widget="text" data-preset="default" data-spacing="aaaa" data-animation="">
+                                                                                                <div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_7" style="text-align: center;"><span class="moto-content-image-plugin-wrapper moto-spacing-top-zero moto-spacing-right-zero moto-spacing-bottom-small moto-spacing-left-zero"><span class="moto-content-image-container"><img class="moto-content-image" data-path="2018/11/mt-1616-home-img-1.jpg" data-id="230" alt="" width="232" height="202" src="@Model.Where(p => p.TableName == tableName).ElementAt(i+c).ImgPath"></span></span></p><h3 class="moto-text_system_7" style="text-align: center;"><a target="_self" data-action="url" class="moto-link" href="#">@Model.Where(p => p.TableName == tableName).ElementAt(i + c).Name - $@Model.Where(p => p.TableName == tableName).ElementAt(i + c).Price</a></h3></div>
+                                                                                            </div>
+                                                                                            <div data-widget-id="wid_1541976219_wwn94vmsz" class="moto-widget moto-widget-divider moto-preset-default moto-align-center moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-small moto-spacing-left-auto  " data-widget="divider_horizontal" data-preset="default">
+                                                                                                <hr class="moto-widget-divider-line" style="max-width:100%;width:80px;">
+                                                                                            </div>
+                                                                                            <div data-widget-id="wid_1542018213_n9sfp0204" class="moto-widget moto-widget-text moto-preset-default  moto-spacing-top-auto moto-spacing-right-small moto-spacing-bottom-auto moto-spacing-left-small " data-widget="text" data-preset="default" data-spacing="asas" data-animation="">
+                                                                                                <div class="moto-widget-text-content moto-widget-text-editable"><p class="moto-text_system_10" style="text-align: center;">@Model.Where(p => p.TableName == tableName).ElementAt(i + c).Description</p></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    }
+                                                                                }
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

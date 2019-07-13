@@ -1,0 +1,28 @@
+﻿@using BestHookah.DAL;
+@model List<Reserve>
+@{
+    ViewBag.Title = "ReserveList";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>ReserveList</h2>
+
+<div>
+    <div style="display: flex;flex-wrap: wrap;height: auto;width: auto;">
+        @foreach (var item in Model)
+        {
+            <div style="margin: 5px;">
+                <ul style="border-style:solid;border-width:thin;list-style-type: none; padding: 6px;">
+                    <li>Reservation number: @item.Id</li>
+                    <li>Name: @item.Name</li>
+                    <li>Email: @item.Mail</li>
+                    <li>Phone: @item.Phone</li>
+                    <li>Message: @item.Message</li>
+                </ul>
+            </div>
+        }
+    </div>
+
+</div>
+
+

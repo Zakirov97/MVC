@@ -1,0 +1,72 @@
+﻿@model BestHookah.DAL.HookahBarDrinks
+
+@{
+    ViewBag.Title = "DeleteHookahBarDrinks";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>DeleteHookahBarDrinks</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>HookahBarDrinks</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImgPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImgPath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TableName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TableName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("DeleteMenuItem", "AboutUs", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(Model => Model.Id)
+        @Html.HiddenFor(Model => Model.ImgPath)
+        @Html.HiddenFor(Model => Model.Name)
+        @Html.HiddenFor(Model => Model.Price)
+        @Html.HiddenFor(Model => Model.TableName)
+        @Html.HiddenFor(Model => Model.Description)
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "HookahBarDrinksList")
+        </div>
+    }
+</div>

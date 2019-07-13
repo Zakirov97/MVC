@@ -1,0 +1,71 @@
+﻿@model BestHookah.DAL.Branches
+
+@{
+    ViewBag.Title = "DeleteBranch";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>DeleteBranch</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Branches</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BranchName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BranchName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoursOfOperations)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoursOfOperations)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm("DeleteBranchPost", "AboutUs", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.BranchName)
+        @Html.HiddenFor(model => model.Description)
+        @Html.HiddenFor(model => model.Address)
+        @Html.HiddenFor(model => model.Phone)
+        @Html.HiddenFor(model => model.HoursOfOperations)
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "BranchList")
+        </div>
+    }
+</div>

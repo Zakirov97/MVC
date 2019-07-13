@@ -1,0 +1,57 @@
+﻿@model IEnumerable<BestHookah.DAL.Branches>
+
+@{
+    ViewBag.Title = "BranchList";
+    Layout = "~/Views/Shared/_BaseLayout.cshtml";
+}
+
+<h2>BranchList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "CreateBranch")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BranchName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HoursOfOperations)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BranchName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HoursOfOperations)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "EditBranch", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "DeleteBranch", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
