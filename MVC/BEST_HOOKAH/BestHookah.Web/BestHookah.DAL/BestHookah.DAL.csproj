@@ -71,6 +71,9 @@
     <Compile Include="EventsOnSite.cs">
       <DependentUpon>EntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Feedbacks.cs">
+      <DependentUpon>EntityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Gallery.cs">
       <DependentUpon>EntityModel.tt</DependentUpon>
     </Compile>

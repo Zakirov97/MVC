@@ -226,6 +226,20 @@ VALUES
 	('GLASS HOOKAH','Round base shape, scientific design','07.07.2019'),
 	('TRANSPARENT HOOKAH','Round base shape, glass product.','12.07.2019');
 GO
+CREATE TABLE Feedbacks(
+Id INT NOT NULL PRIMARY KEY IDENTITY,
+[Name] VARCHAR(255) NOT NULL,
+[Address] VARCHAR(255) NOT NULL,
+[FeedbackText] VARCHAR(255) NOT NULL
+)
+GO
+INSERT INTO Feedbacks
+VALUES
+	('Kelly Harrison','Beverly Hills, Los Angeles, CA','Came here on Saturday night and loved this place! Nice stuff and music cozy atmosphere the best hookah I ever tried in Los Angeles thanks for having us,gonna be back pretty soon'),
+	('Sara Dunn','Beverly Hills, Los Angeles, CA','This hookah lounge is by far the best place to go! It doesn''t compare to any other place in the area. Good vibe, the staff is amazing always attentive and friendly! The music is always on point!'),
+	('Kelly Dunn','Beverly Hills','This hookah lounge is top'),
+	('Sara Harrison','Beverly Hills','Came here on Friday night. Bad stuff and terrible music');
+GO
 SELECT * FROM UsersForNotifications
 SELECT * FROM Reserve
 SELECT * FROM HookahBarDrinks
@@ -234,3 +248,4 @@ SELECT * FROM EventsOnSite
 SELECT * FROM Branches
 SELECT * FROM Gallery
 SELECT * FROM Offers
+SELECT * FROM Feedbacks

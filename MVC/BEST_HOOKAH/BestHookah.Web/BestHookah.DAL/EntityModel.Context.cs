@@ -33,5 +33,6 @@ namespace BestHookah.DAL
         public virtual DbSet<Branches> Branches { get; set; }
         public virtual DbSet<Gallery> Gallery { get; set; }
         public virtual DbSet<Offers> Offers { get; set; }
+        public virtual DbSet<Feedbacks> Feedbacks { get; set; }
     }
 }

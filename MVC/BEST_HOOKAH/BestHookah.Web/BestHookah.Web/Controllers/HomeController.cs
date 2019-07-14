@@ -13,7 +13,18 @@ namespace BestHookah.Web.Controllers
         BestHookahEntities db = new BestHookahEntities();
         public ActionResult Index()
         {
-            return View();
+            Random random = new Random();
+            int random1 = 0;
+            int random2 = 0;
+            while (random1 == random2)
+            {
+                random1 = random.Next(db.Feedbacks.Count());
+                random2 = random.Next(db.Feedbacks.Count());
+            }
+            List<Feedbacks> feedbacks = new List<Feedbacks>();
+            feedbacks.Add(db.Feedbacks.ToList().ElementAt(random1));
+            feedbacks.Add(db.Feedbacks.ToList().ElementAt(random2));
+            return View(feedbacks);
         }
 
         public ActionResult About()
@@ -33,10 +44,20 @@ namespace BestHookah.Web.Controllers
             return View();
         }
 
-        public ActionResult ReserveList()
+        public ActionResult CreateFeedback()
         {
-            List<Reserve> reserves = db.Reserve.ToList();
-            return View(reserves);
+            return View(new Feedbacks());
+        }
+
+        [HttpPost]
+        public ActionResult CreateFeedbackPost(Feedbacks feedback)
+        {
+            string message = "";
+
+            if (BLL.Service.CreateFeedback(feedback, out message))
+                return RedirectToAction("Index");
+            else
+                return RedirectToAction("CreateFeedback", new { feedback = feedback, message = message });
         }
     }
 }

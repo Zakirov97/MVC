@@ -141,6 +141,22 @@ namespace BestHookah.BLL
             //Notify Empl
         }
 
+        public static bool CreateFeedback(Feedbacks feedback, out string message)
+        {
+            try
+            {
+                db.Feedbacks.Add(feedback);
+                db.SaveChanges();
+                message = $"{feedback.Name} Created";
+                return true;
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+                return false;
+            }
+        }
+
         public static bool AddReserve(Reserve reserve, out string message)
         {
             try
@@ -272,7 +288,7 @@ namespace BestHookah.BLL
                 Gallery old = db.Gallery.ToList().FirstOrDefault(p => p.Id == gallery.Id);
                 old.ImageName = gallery.ImageName;
                 old.ImageDescription = gallery.ImageDescription;
-                old.ImagePath= gallery.ImagePath;
+                old.ImagePath = gallery.ImagePath;
                 message = $"{gallery.ImageName} Edited";
                 db.SaveChanges();
                 return true;

@@ -275,6 +275,7 @@
     <Content Include="Views\AboutUs\BlogButtonReadMore.cshtml" />
     <Content Include="Views\Gallery\Gallery.cshtml" />
     <Content Include="Views\Offers\Offers.cshtml" />
+    <Content Include="Views\Home\CreateFeedback.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
